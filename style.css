@@ -1,77 +1,33 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-/* Header Styles */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-/* Navigation Styles */
-nav {
-  background-color: #f8f9fa;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+#board {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: 1px solid black;
   display: flex;
+  flex-wrap: wrap;
 }
 
-nav li {
-  margin-right: 1rem;
-}
-
-/* Main Content Styles */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-section p {
-  line-height: 1.5;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
   text-align: center;
+  line-height: 50px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-footer p {
-  margin: 0;
+.square.white {
+  background-color: #f0d9b5;
 }
 
+.square.black {
+  background-color: #b58863;
+}
+
+.piece {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
